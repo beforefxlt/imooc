@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+<h2>
+    <a href="{% url 'blgo2:article_page' hello.id %}">{{ hello.tile }}</a>
+</h2>
+{% for article in hello %}
+    <a href="">{{ article.title }}</a>
+    <br/>
+{% endfor %}
+
+</body>
+</html>
